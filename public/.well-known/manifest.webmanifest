@@ -1,0 +1,19 @@
+{
+    "name": "Leo",
+    "id": "/",
+    "scope": "/",
+    "start_url": "/",
+    "version": "0.1.0",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/logo.png",
+            "types": "image/png",
+            "sizes": "512x512",
+            "purposes": "any maskable"
+        }   
+    ],
+    "permissions_policy": {
+        "cross-origin-opener-policy": "self"
+    }
+}

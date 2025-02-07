@@ -1,0 +1,136 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@font-face {
+    font-family: 'Material Icons Outlined';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/goc-H7zzDkdnRe18-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    background-color: #585858;
+    height: 50px;
+    padding: 0 10px;
+    overflow: hidden;
+    transition: .5s all;
+}
+
+#navBar.offscreen {
+    height: 0;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white
+}
+
+button:disabled {
+    pointer-events: none;
+    color: grey;
+}
+
+#endSessionButton {
+    margin-left: auto;
+}
+
+#webviewStack {
+    height: 100%;
+}
+
+#webviewStack .active {
+
+}
+
+#tabBar {
+    display: flex;
+    background-color: #585858;
+    height: 100%;
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: clip;
+}
+
+#tabBar.hidden {
+    visibility: hidden;
+}
+
+.tab {
+    margin: 10x 5px -5px 5px;
+    background: transparent;
+    width: 150px;
+    display: flex;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    transition: .25s all;
+}
+
+.tab:hover {
+    background: #3e3e3e6c;
+}
+
+.tab:hover::after {
+    background: transparent;
+}
+
+.tab::after {
+    height: 50%;
+    width: 2px;
+    background: #3e3e3e;
+    content: "";
+    top: 25%;
+    position: relative;
+}
+
+.tab:last-child::after {
+    background: transparent;
+}
+
+.tab.active {
+    background: #3e3e3e;
+}
+
+.tab.active::after {
+    background: transparent;
+}
+
+.site-name {
+    text-overflow: ellipsis;
+    align-self: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    height: 1.5em;
+}
+
+.close-button {
+    margin: 2px 2px 2px auto;
+    color: white;
+}
